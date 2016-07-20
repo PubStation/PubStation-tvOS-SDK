@@ -9,7 +9,7 @@ If you didn't sign up for a PubStation account yet, visit our website at http://
 Download
 --------
 
-The latest version of the SDK can be always found at http://pubstation.tv/tvos.
+The latest version of the SDK can be always found at https://github.com/PubStation/PubStation-tvOS-SDK.
 
 Requirements
 ------------
