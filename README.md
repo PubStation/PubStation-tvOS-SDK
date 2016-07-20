@@ -90,7 +90,7 @@ Integrating our SDK to your tvOS project is very simple; the basic steps are the
    This will create a new singleton instance of the interstitial ad manager with default settings.
    You can call this function now at any time again to retrieve exactly this instance.
    With default settings, the SDK will now start to fetch ads in the background.
-   If you want to see log messages in the console, uncomment the line `swift PubStationSDK.setEnableLogs(true)`
+   If you want to see log messages in the console, uncomment the line `PubStationSDK.setEnableLogs(true)`
    in the previous example. 
    
    If you want to play an interstitial ad, you can check if an ad is already ready to play
