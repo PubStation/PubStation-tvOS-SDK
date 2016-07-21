@@ -8,16 +8,20 @@
 #import <Foundation/Foundation.h>
 
 typedef enum PSUserGender {
+    PSUnknownGender,
     PSMale,
-    PSFemale
+    PSFemale,
+    PSOtherGender
 }PSUserGenderType;
 
 typedef enum PSPrivacyPolicy  {
+    PSPrivacyUndefined,
     PSPrivacyNotProtected,
     PSPrivacyProtected
 }PSPrivacyPolicyType;
 
 typedef enum PSAppPaidInfo  {
+    PSAppPaidUndefined,
     PSAppNotPaid,
     PSAppPaid
 }PSAppPaidInfoType;
@@ -27,15 +31,6 @@ typedef enum PSVideoDismissReason {
     PSMenuButtonPressed,
     PSVideoClicked
 }PSVideoDismissReasonType;
-
-#pragma - mark Gender constants
-extern NSString * const PSMALE;
-extern NSString * const PSFEMALE;
-
-
-
-
-
 
 
 

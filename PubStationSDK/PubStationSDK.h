@@ -89,7 +89,7 @@
 + (nonnull PSUser *)getUser;
 
 /*!
- @abstract Creates a single instance of PSApp. This is to set the app related information like appId, category etc.
+ @abstract Creates a single instance of PSApp. This is to set the app related information like category privacy policy, etc.
  */
 + (nonnull PSApp *)getApp;
 

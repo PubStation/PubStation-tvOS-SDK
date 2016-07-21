@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "PSRequestDelegate.h"
+#import "PSConstant.h"
 #import <CoreGraphics/CoreGraphics.h>
 
 /*!
@@ -14,29 +15,15 @@
  @abstract This class is used to provide user details for the PubStationSDK.
  
  */
-
 @interface PSUser : NSObject <PSRequestDelegate>
 
 /*!
  
- @abstract Exchange-specific ID for the user
+ @abstract Gender of the user. Its value can be @b PSMale or @b PSFemale, @b PSOtherGender or @b PSUnknownGender.
  
  */
-@property (nonatomic) NSString *userId;
+@property (nonatomic) PSUserGenderType gender;
 
-/*!
- 
- @abstract Buyer-specific ID for the user as mapped by the exchange for the buyer
- 
- */
-@property (nonatomic) NSString *buyerUId;
-
-/*!
- 
- @abstract Gender of the user. Its value can be either @b PSMale or @b PSFemale.
- 
- */
-@property (nonatomic) NSString *gender;
 
 /*!
  

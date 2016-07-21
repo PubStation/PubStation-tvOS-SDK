@@ -20,13 +20,6 @@
 
 /*!
  
- @abstract Exchange-specific app ID.
- 
- */
-@property (nonatomic) NSString *appId;
-
-/*!
- 
  @abstract Array of IAB content categories of the app. See section 5.1 in the OpenRTB specifications for a full list:
            http://www.iab.com/wp-content/uploads/2015/05/OpenRTB_API_Specification_Version_2_3_1.pdf
  
