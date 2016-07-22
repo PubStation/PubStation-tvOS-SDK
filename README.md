@@ -1,8 +1,8 @@
 PubStation tvOS SDK
 ===================
 
-Thank you for downloading the PubStation tvOS SDK! With us, you will be able to monetize your cool new Apple TV
-app with only a few lines of code. 
+Thank you for downloading the PubStation tvOS SDK! With us, you will be able to **monetize your cool new Apple TV
+app with only a few lines of code**. 
 
 If you didn't sign up for a PubStation account yet, visit our website at http://pubstation.tv.
 
@@ -17,14 +17,30 @@ Requirements
 For using the SDK, your app needs to be written in Objective-C or Swift and your target platform is required
 to be tvOS 9.0 or higher (so basically any fourth generation Apple TV and up).
 
+How to get started
+------------------
+
+The simplest way to integrate our SDK and play ads is explained below - **if you just want to get started fast,
+please just follow these steps**.
+
+For learning the more advanced features of our SDK, you might wanna have a look at our Swift Demo app:
+
+https://github.com/PubStation/PubStation-tvOS-SwiftDemo
+
 Integration
 -----------
 
 Integrating our SDK to your tvOS project is very simple; the basic steps are the following:
 
-1. Register for a PubStation account at http://pubstation.tv. Download our SDK and extract it to a folder of your choice.
+1. Register for a PubStation account at http://pubstation.tv.
 
-2. Drag & drop the folder PubStationSDK from Finder into your Xcode project.
+2. Clone the PubStation tvOS SDK repository to a folder of your choice:
+
+   ```
+   git clone https://github.com/PubStation/PubStation-tvOS-SDK.git
+   ```
+
+3. Drag & drop the folder PubStationSDK from Finder into your Xcode project.
 
    ![Drag & drop into Xcode project](images/1_sdk_drag_drop.png)
 
@@ -33,7 +49,7 @@ Integrating our SDK to your tvOS project is very simple; the basic steps are the
 
    ![Copy items](images/2_sdk_copy_items.png)
 
-3. In the build settings of your project, set the flag
+4. In the build settings of your project, set the flag
 
    ```
     -ObjC
@@ -44,7 +60,7 @@ Integrating our SDK to your tvOS project is very simple; the basic steps are the
 
    ![-ObjC flag in Other Linker Flags](images/4_sdk_objc.png)
 
-4. In case you are using **Swift**, you need to add the PubStation bridging header to your
+5. In case you are using **Swift**, you need to add the PubStation bridging header to your
    **Objective-C Bridging Header** setting in the section **Swift Compiler - Code generation** in the build
    settings of your project (you can find it easily by typing in "bridging" in the search bar).
    Set this setting to the value
@@ -59,15 +75,15 @@ Integrating our SDK to your tvOS project is very simple; the basic steps are the
    Alternatively, if you are already having a bridging header in your project, just import the bridging header
    file into the bridging header of your project.
 
-5. In the **Info.plist** of your project, create a new row of type **String** with the key **PSApiKey**.
+6. In the **Info.plist** of your project, create a new row of type **String** with the key **PSApiKey**.
    Login into your PubStation account in a browser and find your SDK key. Copy your SDK key and paste it
    as a value to your just newly created entry.
 
    ![Insert your PubStation SDK key](images/6_sdk_key.png)
 
-6. **Congratulations! You are now ready to use the PubStation SDK and monetize your app :)**
+7. **Congratulations! You are now ready to use the PubStation SDK and monetize your app :)**
 
-7. The simplest way to play an ad is the following (example is in Swift, but works exactly the same in Objective-C).
+8. The simplest way to play an ad is the following (example is in Swift, but works exactly the same in Objective-C).
    First, you need to intitialize the SDK, for example in the **viewDidLoad()** method of your ViewController (or any 
    other place in which initialization of your app happens):
 
@@ -106,8 +122,8 @@ Integrating our SDK to your tvOS project is very simple; the basic steps are the
     }
    ```
 
-8. **Awesome, you just played your first interstitial ad! :)**
+9. **Awesome, you just played your first interstitial ad! :)**
 
-9. After running your app with the PubStation SDK integrated for the first time, it will
+10. After running your app with the PubStation SDK integrated for the first time, it will
    appear automatically in your PubStation dashboard (shouldn't take longer than a few minutes).
    To see statistics about your app or to configure it, login into your PubStation account.
